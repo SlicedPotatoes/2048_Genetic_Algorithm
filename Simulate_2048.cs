@@ -139,8 +139,7 @@ namespace _2048_Génétic_Algorithm
                 for(int j = 0; j < GlobalVariable.BOARD_SIZE - 1; j++)
                 {
                     int diff = Math.Abs(grid[i * GlobalVariable.BOARD_SIZE + j] - grid[i * GlobalVariable.BOARD_SIZE + j + 1]);
-                    int diff2 = Math.Abs(grid[j * GlobalVariable.BOARD_SIZE + i] - grid[j * GlobalVariable.BOARD_SIZE + i + 1]);
-                    rowMonotonie += diff + diff2;
+                    rowMonotonie += diff;
                 }
                 monotonie += rowMonotonie;
             }
